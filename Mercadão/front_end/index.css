@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+#inicio {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+#inicio h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#inicio h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.nav-links {
+    margin-top: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e0e0e0;
+}
+
+.outros {
+    padding: 2rem;
+    text-align: center;
+}
+
+.outros h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#produto1, #produto2, #produto3 {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    background-color: #fff;
+    margin: 0 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    vertical-align: top;
+}
+
+@media (max-width: 768px) {
+    #produto1, #produto2, #produto3 {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0;
+    }
+}
